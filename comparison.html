@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!navigation bar> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color:rgb(144, 153, 161);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color:turquoise;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="web.html">Home</a>
+  <a href="comparison.html">Comparison</a>
+  <a href="data.html">Data</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Plots
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="max_temp.html">Max Tempeture</a>
+    <a href="humidity.html">Humidity</a>
+    <a href="cloudiness.html">Cloudiness</a>
+    <a href="wind_speed.html">Wind Speed</a>
+  </div>
+  </div> 
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+
+
+
+</script>
+<style>
+  nav { 
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(201, 202, 202);  
+  }
+</style>
+
+<head>
+<meta charset="utf-8">
+<title>Comparison</title>
+</head>
+<body>
+<style>
+  h1 { 
+      background-color: turquoise;
+      font-size: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+      color:rgb(77, 77, 77);
+      margin-bottom: 20px;
+      padding: 20px;
+      
+      
+  }
+</style>
+<h1> C O M P A R I S O N </h1>
+<style>
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
+
+
+<!description of page> 
+<p> Here we can compare all the visualizations  </p>
+<style>
+    p {  padding: 20px;
+   
+    }
+</style>
+</body>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+			  <div class="container">
+					<div class="row">
+					   <div class="col-md-1"></div>  
+					   <div class="col-md-8">
+							<div class="row">
+							  <div class="col-md-12">
+							  </div>  
+							</div> 
+						  <div class="row">
+							<div class="col-md-3">
+							  <h3>City Latitude vs. Max Temperature</h3>    
+							  <a href="max_temp.html">Max Temperature<img src="../Resources/assets/images/maxtemp.png" width="360" height="250"></a> 
+							</div>
+							<div class="col-md-4"></div>
+							<div class="col-md-4">
+							  <h3>City Latitude vs. Humidity</h3>     
+							  <a href="humidity.html">Humidity<img src="../Resources/assets/images/hum.png" width="360" height="250"></a> 
+							</div>
+							<div class="col-md-3"></div>
+						  </div>
+						  <div class="row">
+							<div class="col-md-3">
+							  <h3>City Lattitude vs. Cloudiness</h3>     
+							  <a href="Cloudiness.html">Cloudiness<img src="../Resources/assets/images/cloud.png" width="360" height="250"></a> 
+							</div>
+							<div class="col-md-4"></div>
+							<div class="col-md-4">
+                                <h3>City Lattitude vs. Wind Speed</h3>     
+                                <a href="wind_speed.html">Wind Speed<img src="../Resources/assets/images/wind.png" width="360" height="250"></a> 
+							</div>
+							<div class="col-md-3"></div>
+						  </div>
+						</div>
+					</div>    
+				  </body> 
+				  <html>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
